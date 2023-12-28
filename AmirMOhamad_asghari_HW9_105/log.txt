@@ -1,0 +1,3 @@
+[2023-12-24 16:38:07] Error downloading: http://example.com/file.zip
+[2023-12-27 15:51:16] Error downloading: http://example.com/file.zip
+[2023-12-27 15:51:40] Error downloading: http://example.com/file.zip
