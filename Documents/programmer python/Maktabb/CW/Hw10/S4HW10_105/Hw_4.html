@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحه با دکمه‌های در جدول</title>
+    <style>
+      /* استایل‌های CSS برای طراحی دکمه‌ها و جدول */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* استایل‌های CSS برای دکمه‌ها */
+      button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin: 5px; /* فاصله بین دکمه‌ها */
+      }
+
+      /* استایل‌های CSS برای دکمه‌های مربعی و با رنگ */
+      .square-button {
+        background-color: #3498db; /* رنگ پس زمینه دلخواه */
+        color: #fff; /* رنگ متن دلخواه */
+        border-radius: 5px; /* شعاع گوشه‌ها برای شکل گرد کردن دکمه */
+      }
+
+      /* استایل‌های CSS برای دکمه‌های بیضی */
+      .ellipse-button {
+        background-color: #2ecc71; /* رنگ پس زمینه دلخواه */
+        color: #fff; /* رنگ متن دلخواه */
+        border-radius: 35%; /* شعاع گوشه‌ها برای ایجاد شکل بیضی */
+        transform: scaleX(1) scaleY(1); /* تغییر اندازه در راستای افقی و عمودی */
+        margin: 10px 5px; /* فاصله بین دکمه‌ها */
+      }
+
+      /* استایل‌های CSS برای دکمه‌های خالی از رنگ با متن رنگی */
+      .text-only-button {
+        color: #3498db; /* رنگ متن دلخواه */
+        background-color: #fff; /* پس زمینه سفید */
+        border: 2px solid #3498db; /* حاشیه دکمه با رنگ متن */
+        padding: 10px;
+        cursor: pointer;
+        margin: 5px; /* فاصله بین دکمه‌ها */
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <!-- سه دکمه اول به شکل مربعی و با استایل خاص -->
+        <td>
+          <button class="square-button" onclick="buttonClicked('Button 1')">
+            PRESS ME
+          </button>
+        </td>
+        <td>
+          <button class="square-button" onclick="buttonClicked('Button 2')">
+            PRESS ME
+          </button>
+        </td>
+        <td>
+          <button class="square-button" onclick="buttonClicked('Button 3')">
+            PRESS ME
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <!-- دکمه چهارم با استایل خاص -->
+        <td>
+          <button class="square-button" onclick="buttonClicked('Button 4')">
+            PRESS ME
+          </button>
+        </td>
+        <!-- دکمه‌های پنجم تا هشتم با شکل بیضی -->
+        <td>
+          <button class="ellipse-button" onclick="buttonClicked('Button 5')">
+            PRESS ME
+          </button>
+        </td>
+        <td>
+          <button class="ellipse-button" onclick="buttonClicked('Button 6')">
+            PRESS ME
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="ellipse-button" onclick="buttonClicked('Button 7')">
+            PRESS ME
+          </button>
+        </td>
+        <td>
+          <button class="ellipse-button" onclick="buttonClicked('Button 8')">
+            PRESS ME
+          </button>
+        </td>
+        <!-- دکمه‌های ۹ تا ۱۲ خالی از رنگ با متن رنگی -->
+        <td>
+          <button class="text-only-button" onclick="buttonClicked('Button 9')">
+            PRESS ME
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="text-only-button" onclick="buttonClicked('Button 10')">
+            PRESS ME
+          </button>
+        </td>
+        <td>
+          <button class="text-only-button" onclick="buttonClicked('Button 11')">
+            PRESS ME
+          </button>
+        </td>
+        <td>
+          <button class="text-only-button" onclick="buttonClicked('Button 12')">
+            PRESS ME
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function buttonClicked(buttonText) {
+        alert("دکمه با متن: " + buttonText + " فشرده شد.");
+      }
+    </script>
+  </body>
+</html>
