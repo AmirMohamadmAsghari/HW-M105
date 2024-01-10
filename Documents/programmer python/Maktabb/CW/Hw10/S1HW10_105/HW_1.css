@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.rectangle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: moveCircle 4s infinite;
+}
+
+@keyframes moveCircle {
+  0%,
+  100% {
+    top: 0;
+    left: 0;
+    background-color: #3498db;
+  }
+  25% {
+    top: 0;
+    left: 150px;
+    background-color: #e74c3c;
+  }
+  50% {
+    top: 150px;
+    left: 150px;
+    background-color: #2ecc71;
+  }
+  75% {
+    top: 150px;
+    left: 0;
+    background-color: #f39c12;
+  }
+}
