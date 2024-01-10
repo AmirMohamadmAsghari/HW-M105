@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Hw_3.css" />
+  <title>Interior Design Company</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="company-name">Company Name</div>
+    <nav>
+      <ul>
+        <li><a href="#" style="color: white">Home</a></li>
+        <li><a href="#" style="color: white">Services</a></li>
+        <li><a href="#" style="color: white">Designers</a></li>
+        <li><a href="#" style="color: white">Packages</a></li>
+        <li><a href="#" style="color: white">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <section id="who-we-are">
+      <header>
+        <h1 class="header-h1">Interior Design</h1>
+      </header>
+      <header>
+        <h2 class="header-h2">Showcase</h2>
+        <div class="image-grid">
+          <figure>
+            <img src="livingroom.jpg" alt="Design Example 1" />
+            <figcaption>Living Room Design</figcaption>
+          </figure>
+          <figure>
+            <img src="badroom.jpg" alt="Design Example 2" />
+            <figcaption>Bedroom Design</figcaption>
+          </figure>
+          <figure>
+            <img src="kichn.jpg" alt="Design Example 3" />
+            <figcaption>Kitchen Design</figcaption>
+          </figure>
+          <figure>
+            <img src="bath.jpg" alt="Design Example 4" />
+            <figcaption>Bathroom Design</figcaption>
+          </figure>
+          <figure>
+            <img src="offisc.jpg" alt="Design Example 5" />
+            <figcaption>Office Design</figcaption>
+          </figure>
+          <figure>
+            <img src="out.jpg" alt="Design Example 6" />
+            <figcaption>Outdoor Design</figcaption>
+          </figure>
+        </div>
+      </header>
+    </section>
+    <!-- Your content goes here -->
+    <div class="section-title">
+      <h2 class="header-h3" style="color: red;">Services</h2>
+      <p class="section-paragraph">We provide a wide range of services to meet your needs. Our team is dedicated to
+        delivering high-quality solutions tailored to your requirements. Whether it's web development, design, or
+        consulting, we are here to help you achieve success.</p>
+    </div>
+    <div class="designers-section">
+      <h2 class="header-h3" style="color: red;">Designers</h2>
+      <p class="designers-paragraph">
+        Meet our talented designers who bring creativity and innovation to every project. With a diverse set of skills,
+        our designers ensure that your vision comes to life with stunning visual appeal and user-friendly interfaces.
+      </p>
+      <div class="designer-container">
+        <div class="designer">
+          <img src="des2.jpg" alt="Designer 1">
+          <p class="designer-name">ali jo</p>
+          <p class="designer-role">UI/UX Designer</p>
+          <p class="designer-resume">Experienced designer with a focus on user-centric design principles.</p>
+
+        </div>
+        <div class="designer">
+          <img src="des1.jpg" alt="Designer 1">
+          <p class="designer-name">John Doe</p>
+          <p class="designer-role">UI/UX Designer</p>
+          <p class="designer-resume">Experienced designer with a focus on user-centric design principles.</p>
+
+        </div>
+        <div class="designer">
+          <img src="des3.jpg" alt="Designer 1">
+          <p class="designer-name">Mosa</p>
+          <p class="designer-role">UI/UX Designer</p>
+          <p class="designer-resume">Experienced designer with a focus on user-centric design principles.</p>
+
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="packages-container" style="margin-top: 100px;">
+  <div class="packages-section">
+    <h2 class="header-h3" style="color: red;">Packages.</h2>
+    <p class="section-paragraph">Welcome to our professional interior design! Our packages offer you the opportunity to experience a world of beauty and functionality. From basic packages with essential features to Pro packages with advanced capabilities, each of these choices is meticulously designed for you with precision and quality. We are here to accompany you on a serene journey into the world of interior design.</p>
+
+    <div class="packages-tables" style="display: flex;">
+      <table class="pro-package" style="flex: 1; margin-right: 10px;">
+        <tr>
+          <th class="pro-header">Pro</th>
+        </tr>
+        <tr>
+          <td class="package-detail">Feature 1</td>
+        </tr>
+        <tr>
+          <td class="package-detail">Feature 2</td>
+        </tr>
+        <tr>
+          <td class="package-detail">Feature 3</td>
+        </tr>
+        <tr>
+          <td class="package-detail">$249<br>per Room</td>
+        </tr>
+        <tr>
+          <td class="signup-button" colspan="4">Signup</td>
+        </tr>
+      </table>
+      
+      <table class="pro-package" style="flex: 1; margin-left: 10px;">
+        <tr>
+          <th class="pro-header" style="background-color: grey;">‌Basic</th>
+        </tr>
+        <tr>
+          <td class="package-detail">Feature 1</td>
+        </tr>
+        <tr>
+          <td class="package-detail">Feature 2</td>
+        </tr>
+        <tr>
+          <td class="package-detail">Feature 3</td>
+        </tr>
+        <tr>
+          <td class="package-detail">$199<br>per Room</td>
+        </tr>
+        <tr>
+          <td class="signup-button" colspan="4" style="background-color: gray;">Signup</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="contact-section">
+  <h2 class="header-h3" style="color: red;">Contact</h2>
+  <p>Leave us your message here.</p>
+  <form action="your_server_script.php" method="post" style="display: flex; flex-direction: column;">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="enter name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="enter email">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required placeholder="enter message "></textarea>
+
+    <button type="submit" class="send-message-button" style="color: white; background-color: red;">Send Message</button>
+  </form>
+</div>
+</body>
+
+</html>
+
+
+</body>
+
+</html>
