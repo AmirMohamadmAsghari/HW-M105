@@ -1,4 +1,4 @@
-## In this repository, there are exercises to strengthen bash, Python script, Regex and Frontend
+## In this repository, there are exercises to strengthen bash script, Python , Regex and Frontend
 
 Writing a TODO program with Bash Script
 Writing a decorator to register the function called in the file
